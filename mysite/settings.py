@@ -24,11 +24,12 @@ SECRET_KEY = 'django-insecure-5r#glj^0ue-vcyglm+h!%qap^!at)m6jok1gm0eks6sk5%a59&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,8 +124,8 @@ STATICFILES_DIRS = BASE_DIR / 'assets',
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "inspiring.sunset07@gmail.com"
-EMAIL_HOST_PASSWORD = "lzyotjlflpmbwbaa"
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
